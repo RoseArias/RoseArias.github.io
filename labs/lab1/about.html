@@ -1,13 +1,73 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lab 1: About</title>
-</head>
-<body>
-    <header>
-        <h1> About </h1>
-    </header>
-</body>
+<html language="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Rose Arias-Aceves: Portfolio</title>
+        <link href="css/styles.css" rel="stylesheet">
+        <style>
+            /* body {
+                background-color: #000066 !important;
+            } */
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <h1>Rose Arias-Aceves</h1>
+        </header>
+        <hr>
+        <nav>
+            <a href="index.html"> Home </a>
+            <a href="about.html" class="selected"> About </a>
+            <a href="contact.html"> Contact Me </a>
+
+        </nav>
+        
+        <!-- we make main display: flex, 
+        but it could be any html element -->
+        <div id="content">
+
+            <!-- Create the table to hold experience data -->
+             <table>
+                <tr id="table-header">
+                    <td><strong>Programming language</strong></td>
+                    <td><strong>Years experience</strong></td>
+                </tr>
+                <tr class="table-row">
+                    <td>Java</td>
+                    <td>3</td>
+                </tr>
+                <tr class="table-row">
+                    <td>C++</td>
+                    <td>2</td>
+                </tr>
+                <tr class="table-row">
+                    <td>PHP</td>
+                    <td>1</td>
+                </tr>
+             </table>
+
+             <ul>
+                <li><span class="hobby">Video games</span>: I am currently trying to 112% hollow knight!</li>
+                <li><span class="hobby">Ski</span>: I am learning to ski, though im quite bad at it currently</li>
+                <li><span class="hobby">Music</span>: I love indie music, currently listening to Tiger Really's <em>mayfly daydream</em> </li>
+                <li><span class="hobby">Programming</span>: I have an admin background and am currently learning web development and set up a CI/CD pipeline to my main site</li>
+             </ul>
+
+        </div>
+        
+        
+        <footer>
+             <hr>
+             CST336 Internet Programming. 2026&copy; Rose Arias-Aceves <br>
+             <strong>Disclaimer:</strong> The information in this webpage is fictitious. <br>
+            <figure>
+                <img src="img/logo.jpg" alt="Stacked logo reading 'Cal State Monterey Bay'">
+            </figure>
+
+        </footer>
+        
+    </body>
+
 </html>

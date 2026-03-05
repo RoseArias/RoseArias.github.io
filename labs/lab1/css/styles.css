@@ -1,0 +1,70 @@
+body {
+    background-color: black;
+    color: grey;
+}
+
+header, main, nav, footer {
+    text-align: center;
+}
+
+nav a { /* Links within nav container*/
+    padding:15px;
+    padding-bottom: 4px;
+    font-size: 1.8em;
+    text-decoration: none; /* Removes underline*/
+    color:white; /* be defaults links are blue (makes it white)*/
+}
+
+nav a:hover { /* pseudo class*/
+    border-bottom: 2px orange solid; /* puts solid orange line under link on hover*/
+    font-size: 2em; /*increases font*/
+    transition: .9s; /* transition effect */
+}
+
+.selected{
+    border-bottom: 2px #5693b8 solid; /* puts solid blue line under current selected tag*/
+    font-size: 2em; /*increases font*/
+}
+
+main{
+    display:flex;
+    justify-content: center;
+}
+
+footer{
+    font-size: 14px;
+    color:#5693b8;
+}
+
+/*increase padding for better readability on my monitor*/
+table{
+    margin: 0px auto;
+    padding: 40px
+}
+
+td{
+    padding-right: 10px;
+    font-size: 1.3em;
+}
+
+td strong{
+    color: rgb(164, 76, 235);
+}
+
+#table-header {
+    background-color: #131f9b;
+}
+
+.table-row {
+    background-color: #323fd4;
+}
+
+ul {
+    width: 500px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.hobby {
+    color: rgb(164, 76, 235);
+}
