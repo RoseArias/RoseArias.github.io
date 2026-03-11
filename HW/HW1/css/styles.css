@@ -1,0 +1,192 @@
+body {
+    background-color: #303030;
+    color: white;
+}
+
+header,
+nav,
+footer {
+    text-align: center;
+}
+
+nav {
+    background-color: #b0ddff;
+    padding: 5px;
+        font-weight: 800;
+
+}
+
+nav a {
+    /* Links within nav container*/
+    padding: 15px;
+    padding-bottom: 4px;
+    font-size: 1.8em;
+    text-decoration: none;
+    /* Removes underline*/
+    color: white;
+    /* be defaults links are blue (makes it white)*/
+
+      /* transition effect */
+    transition: 1.4s;
+}
+
+/* pseudo class*/
+nav a:hover {
+
+    /*increases font*/
+    font-size: 2em;
+    /* transition effect */
+    transition: 1.4s;
+    color: #3169df;
+}
+
+.selected {
+    font-size: 2em;
+    /*increases font*/
+    color: #657eb4;
+
+}
+
+main {
+    justify-content: center;
+}
+
+footer {
+    font-size: 14px;
+    color: #a44ceb;
+}
+
+/*increase padding for better readability on my monitor*/
+table {
+    margin: 0px auto;
+    padding: 40px;
+}
+
+td {
+    padding-right: 10px;
+    font-size: 1.3em;
+}
+
+td strong {
+    color: #a44ceb;
+}
+
+#table-header {
+    background-color: #131f9b;
+}
+
+.table-row {
+    background-color: #323fd4;
+}
+
+.flex-box {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+#small-grey {
+    font-size: 12px;
+    color: lightgray;
+    padding-left: 15px;
+}
+
+ul {
+    width: 20;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.hobby {
+    color: rgb(164, 76, 235);
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+p {
+    text-align: left;
+}
+
+h2,
+h3,
+h4,
+h5 {
+    text-align: center;
+}
+
+h1 {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+a{
+    color: white;
+}
+
+.side-images{
+    width: 550px;
+    height: 325px;
+}
+
+#docker-figure{
+    width: 425px;
+    height: 425px;
+    background-color: white;
+}
+
+#keyterms{
+    text-align: left;
+}
+
+.logo-rows{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#containerfig{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#docker-orch{
+    width: 600px;
+    height: 360px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+}
+code{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(20, 19, 19);
+    color: #18E699;
+    font-size: 14px;
+    padding: 2px;
+}
+
+Pre {
+    font-family: 'courier new', courier, monospace;
+    background-color: rgb(20, 19, 19);
+    color: #18e699;
+    font-size: 14px;
+    padding: 12px;
+    text-align: left !important;
+    white-space: pre;
+}
+
+.wrapper{
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+
+}
