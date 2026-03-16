@@ -1,0 +1,82 @@
+body{
+    text-align:center;
+    background-image: url("../img/number_learning.jpg");
+    background-size: cover;
+}
+
+header{
+    color:rgb(209, 207, 255);
+    background-color:rgba(100,100,100,.8);
+    padding:20px;
+    margin-bottom:15px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#main {
+    background-color:rgba(200,200,200,.8);
+    font-size: 1.5rem;    
+    padding: 20px;
+}
+
+
+#feedback{
+    font-size: 30px;
+    padding: 5px;
+    margin: 10px;
+    display: inline-block;
+    font-weight:bold;
+    background-color: #9b949e;
+
+}
+
+#feedbox {
+    padding: 10px;
+    background-color: #9f94a2;
+    margin: 10px;
+    height: 50px;
+
+}
+
+/* buttons heavily inspired by https://www.w3schools.com/css/css3_buttons.asp */
+#guessBtn{
+    background-color: #8f3fe0;
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#resetBtn{
+    background-color: #ff2828;
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+
+}
+
+#infobox{
+    display: inline-block;
+    text-align: left;
+    padding: 0px 20px 20px 0px;
+    height: 150px;
+    width: 350px
+
+}
+
+footer{
+    padding: 50px;
+    background-color:rgba(200,200,200,.8);
+    font-size: small;
+    color: grey;
+}

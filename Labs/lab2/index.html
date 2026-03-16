@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Guess a Number </title>
+    <meta charset="utf-8">
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <h1>Guess the Number!</h1>
+        <h2>Guess a number between 1 and 99 in seven attempts!</h2>
+    </header>
+    <br>
+    <div id="main">
+        <div>
+        Enter a guess:
+            <input type="text" id="playerGuess" size="10">
+            <button id="guessBtn"> Guess </button> <br>
+        </div>
+        <div id="feedbox">
+            <div id="feedback"></div>
+        </div>
+        <div id="answer"></div>
+        <div><button id="resetBtn"> Reset </button></div>
+
+        <div id="infobox">
+            <div> Remaining guesses: <span id="remaining"></span></div>
+            <div> Previous guesses: <span id="guesses"></span></div>
+            <div> Total Wins: <span id="wins"></span></div>
+            <div> Total Losses: <span id="losses"></span></div>
+        </div>
+
+    </div>
+    <script src="js/script.js"></script>
+    <script src="js/script.js"></script>
+    <footer>
+        Background image by <a href="http://www.freeimageslive.co.uk/free_stock_image/number-learning-jpg"
+            target="_blank"> gratuit </a> is licensed under a Creative Commons Attribution 3.0 Unported License.
+    </footer>
+</body>
+
+</html>
