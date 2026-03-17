@@ -10,6 +10,7 @@ let attempts = localStorage.getItem("total_attempts");
 
 displayQ4Choices();
 document.querySelector("#reveal").style.display = "none";
+document.querySelector("#highscore").style.display = "none";
 
 //functions
 function displayQ4Choices() {
@@ -49,15 +50,15 @@ function gradeQuiz() {
   let q9Response = document.querySelector("#q9").value.toLowerCase();
   let q10Response = document.querySelector("#q10").value;
 
-  let q4Response; 
-  let value =  document.querySelector("input[name=q4]:checked");
-  if(value){
+  let q4Response;
+  let value = document.querySelector("input[name=q4]:checked");
+  if (value) {
     q4Response = value.value;
   }
-  
+
   let q6Response;
   value = document.querySelector("input[name=q6]:checked");
-  if(value){
+  if (value) {
     q6Response = value.value;
   }
 
@@ -136,6 +137,13 @@ function gradeQuiz() {
     wrongAnswer(10);
   }
 
+  if (score > 80) {
+    document.querySelector("#highscore").style.display = "inline";
+    document.querySelector("#highscore").innerHTML = "Congrats! You scored above an 80!"
+  } else {
+    document.querySelector("#highscore").style.display = "none";
+  }
+
   document.querySelector("#totalScore").innerHTML = `Total Score: ${score}`;
   document.querySelector("#totalAttempts").innerHTML = `Total Attempts: ${++attempts}`;
   localStorage.setItem("total_attempts", attempts);
@@ -160,8 +168,8 @@ function wrongAnswer(index) {
 }
 
 function revealAnswers() {
-  for (let index = 1; index < 11; index++){
-    document.querySelector(`#q${index}Feedback`).className = "bg-yellow text-white";
+  for (let index = 1; index < 11; index++) {
+    document.querySelector(`#q${index}Feedback`).className = "bg-yellow text-black";
   }
   document.querySelector("#q1Feedback").innerHTML = "Sacramento";
   document.querySelector("#q2Feedback").innerHTML = "The Missouri river";
