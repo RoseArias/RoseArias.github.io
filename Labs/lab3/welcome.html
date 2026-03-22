@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title> Welcome! </title>
+</head>
+
+<body>
+  <h1>Congrats! Your account was created!</h1><br>
+
+
+  <h2>Account details:</h2>
+  <p><span id="test"></span>
+  <p>
+
+    <!--source adapted from stack overflow - https://stackoverflow.com/a/57192874-->
+    <script>
+      const params = new URLSearchParams(document.location.search);
+      const fName = params.get("fName");
+      const lName = params.get("lName");
+      const gender = params.get("gender");
+      const zip = params.get("zip");
+      const state = params.get("state");
+
+
+      document.querySelector("#test").innerHTML = `<strong>Name:</strong> ${fName} ${lName}<br>
+        <strong>Gender:</strong> ${gender}<br>
+        <strong>Location:</strong> ${state}, ${zip}`;
+    </script>
+</body>
+
+</html>
