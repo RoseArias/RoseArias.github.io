@@ -26,6 +26,8 @@ async function displayCity() {
 
   if (!data || data.length === 0) {
     document.querySelector("#zipError").innerHTML = "Zip code not found";
+    document.querySelector("#zipError").className = "bg-warning fw-bold text-white";
+
     return;
   }
 
