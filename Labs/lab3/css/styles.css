@@ -1,0 +1,32 @@
+#background{
+    background-image: url("../img/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#bodydiv{
+    background-color: rgba(50,50,50,0.6);
+    padding: 30px;
+
+    width: 80%;
+    max-width: 1400px;
+    color: white;
+    margin-top: 20px;
+    
+}
+
+footer{
+    color: white;
+
+    font-weight: bold;
+}
+
+footer {
+  justify-content: center;
+  color: black;
+  font-weight: bold;
+}
