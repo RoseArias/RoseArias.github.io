@@ -1,0 +1,38 @@
+/*Color pallet inspired from https://rosepinetheme.com/palette/ */
+
+#background {
+  background-color: #2c2e39;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px;
+}
+
+#bodydiv {
+  background-color: #2c2e39;
+  padding: 30px;
+
+  width: 30%;
+  max-width: 1400px;
+  color: white;
+  margin-top: 20px;
+  font-weight: 500;
+  font-size: large;
+
+
+}
+
+.open-sans-font {
+  color: #e6e5f1;
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+a:visited{
+  color: #c4a7e7;
+}
