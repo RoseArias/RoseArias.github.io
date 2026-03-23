@@ -1,6 +1,5 @@
 //event listeners
 document.querySelector("#zip").addEventListener("change", displayCity);
-document.querySelector("#state").addEventListener("focus", displayStates);
 document.querySelector("#state").addEventListener("change", displayCounties);
 document.querySelector("#username").addEventListener("change", checkUsername);
 document.querySelector("#password").addEventListener("click", generatePassword);
@@ -9,7 +8,7 @@ document.querySelector("#signupForm").addEventListener("submit", function (event
   validateForm(event);
 });
 
-
+displayStates();
 //documents
 
 //Display city from WebAPI after entering a zip code
