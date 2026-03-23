@@ -62,7 +62,7 @@ async function displayCounties() {
   let data = await response.json();
 
   let countryList = document.querySelector("#county");
-  countryList.innerHTML = "<option> Select County </option>"
+  countryList.innerHTML = "<option value=''> Select County </option>";
   for (let index = 0; index < data.length; index++) {
     countryList.innerHTML += `<option> ${data[index].county} </option>`;
   }
@@ -80,6 +80,7 @@ async function checkUsername() {
 
 
   let usernameError = document.querySelector("#usernameError");
+  usernameError.className = "";
   if (data.available) {
     usernameError.innerHTML = " Username available!";
     usernameError.style.color = "green";
@@ -89,18 +90,18 @@ async function checkUsername() {
   }
 
 }
-async function generatePassword(){
+async function generatePassword() {
 
   let url = "https://csumb.space/api/suggestedPassword.php?length=8";
   let response = await fetch(url);
   let data = await response.json(response);
 
   let suggestedPwd = document.querySelector("#suggestedPwd");
-  if(!suggestedPwd){
+  if (!suggestedPwd) {
     return
   }
   document.querySelector("#suggestedPwd").innerHTML = `Suggested password: ${data.password}`;
-  
+
 
 }
 
@@ -123,49 +124,49 @@ function validateForm(e) {
 
   if (fname.length == 0) {
     document.querySelector("#fNameError").innerHTML = "First Name Required!";
-    document.querySelector("#fNameError").className = "bg-warning text-white";
+    document.querySelector("#fNameError").className = "bg-warning fw-bold text-white";
     isValid = false;
   }
 
   if (lname.length == 0) {
     document.querySelector("#lNameError").innerHTML = "Last Name Required!";
-    document.querySelector("#lNameError").className = "bg-warning text-white";
+    document.querySelector("#lNameError").className = "bg-warning fw-bold text-white";
     isValid = false;
   }
 
   if (!gender) {
     document.querySelector("#genderError").innerHTML = "Gender Required!";
-    document.querySelector("#genderError").className = "bg-warning text-white";
+    document.querySelector("#genderError").className = "bg-warning fw-bold text-white";
     isValid = false;
   }
 
   if (!zip) {
     document.querySelector("#zipError").innerHTML = "Zip Required!";
-    document.querySelector("#zipError").className = "bg-warning text-white";
+    document.querySelector("#zipError").className = "bg-warning fw-bold text-white";
     isValid = false;
   }
 
   if (!state || state === "") {
     document.querySelector("#stateError").innerHTML += "State Required!";
-    document.querySelector("#stateError").className = "bg-warning text-white";
+    document.querySelector("#stateError").className = "bg-warning fw-bold text-white";
     isValid = false;
   }
 
   if (!county || county === "") {
     document.querySelector("#countyError").innerHTML += "County Required!";
-    document.querySelector("#countyError").className = "bg-warning text-white";
+    document.querySelector("#countyError").className = "bg-warning fw-bold text-white";
     isValid = false;
   }
 
   if (username.length == 0) {
     document.querySelector("#usernameError").innerHTML = "Username Required!";
-    document.querySelector("#usernameError").className = "bg-warning text-white";
+    document.querySelector("#usernameError").className = "bg-warning fw-bold text-white";
     isValid = false;
   }
 
   if (password.length < 6) {
     document.querySelector("#passwordError").innerHTML = "Password needs to be at least 6 characters!";
-    document.querySelector("#passwordError").className = "bg-warning text-white";
+    document.querySelector("#passwordError").className = "bg-warning fw-bold text-white";
     isValid = false;
   }
 
@@ -188,7 +189,7 @@ function resetInnerHTML() {
   document.querySelector("#zipError").innerHTML = "";
   document.querySelector("#stateError").innerHTML = "";
   document.querySelector("#countyError").innerHTML = "";
-
+  
   document.querySelector("#usernameError").innerHTML = "";
   document.querySelector("#passwordError").innerHTML = "";
   document.querySelector("#passwordAgainError").innerHTML = "";
