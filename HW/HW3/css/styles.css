@@ -10,12 +10,26 @@
 }
 
 #bodydiv {
-  padding: 30px;
+ 
   width: 70%;
   color: white;
-  margin-top: 20px;
   font-weight: 500;
   font-size: large;
+}
+
+#info-text{
+  background-color: #2a273f;
+  border-radius: 5px;
+  width: 600px;
+  height: 200px;
+  margin: 0 auto;
+}
+
+#info-text p{
+  text-align: justify;
+  font-size: large;
+  font-weight: 400;
+
 }
 
 #formdiv {
@@ -46,6 +60,16 @@
   border-radius: 5px;
   width: 350px;
   height: 200px;
+  overflow-wrap: break-word;
+}
+
+h2{
+  font-size: 18px;
+  margin: 5px;
+}
+p{
+  font-size: 14px;
+  margin: 5px;
 }
 
 input[type=submit] {
@@ -78,7 +102,6 @@ a:visited {
 
 form {
   background-color: #2a273f;
-
   width: 100%;
-
 }
+

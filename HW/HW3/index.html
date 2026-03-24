@@ -19,22 +19,21 @@
   </div>
 
   <div id="bodydiv">
-
-    <div id="grid-container">
-
-      <div class="grid-item">a</div>
-      <div class="grid-item">b</div>
-      <div class="grid-item">c</div>
-      <div class="grid-item">d</div>
-
+    <div id="info-text" class="stretch-div">
+      <h2>Site info</h2>
+      <p>
+        This site generates random fake user profile using an online API called <a href="https://fakerapi.it">Faker API</a>
+        You can chose how many users to create and select a gender preference.
+        Each generated profile will include a name, gender, email, phone number, and birthday.
+        This is usefull for testing or practicing with data without using and real personal information!
+      </p>
 
     </div>
-
-
-
+    <div id="grid-container">
+    </div>
   </div>
   <div id="formdiv">
-    <form autocomplete="off">
+    <form id="personForm" autocomplete="off">
 
       <div id="quantitySelect" class="stretch-div">
         Desired Quantity:<br>
@@ -57,6 +56,7 @@
           <option value="n"> No preference </option>
           <option value="f"> Female </option>
           <option value="m"> Male </option>
+
         </select>
       </div>
 
