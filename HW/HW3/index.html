@@ -6,31 +6,63 @@
   <title> Fake User Generator </title>
   <link rel="icon" type="image/x-icon" href="img/favicon.ico">
   <link rel="stylesheet" href="css/styles.css">
-
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
     rel="stylesheet">
-
 </head>
 
 <body id="background" class="open-sans-font">
+  <div class="max-width">
+    <h1>Fake User Generator</h1>
+  </div>
+
   <div id="bodydiv">
 
+    <div id="grid-container">
+
+      <div class="grid-item">a</div>
+      <div class="grid-item">b</div>
+      <div class="grid-item">c</div>
+      <div class="grid-item">d</div>
+
+
+    </div>
 
 
 
+  </div>
+  <div id="formdiv">
+    <form autocomplete="off">
+
+      <div id="quantitySelect" class="stretch-div">
+        Desired Quantity:<br>
+        <select id="quantity" name="quantity">
+          <option value=""> Select One </option>
+          <option value="1"> 1 </option>
+          <option value="2"> 2 </option>
+          <option value="3"> 3 </option>
+          <option value="4"> 4 </option>
+          <option value="5"> 5 </option>
+          <option value="6"> 6 </option>
+          <option value="7"> 7 </option>
+          <option value="8"> 8 </option>
+          <option value="9"> 9 </option>
+        </select> <br>
+      </div>
+      <div id="genderSelect" class="stretch-div">
+        Gender preference:<br>
+        <select id="gender" name="gender">
+          <option value="n"> No preference </option>
+          <option value="f"> Female </option>
+          <option value="m"> Male </option>
+        </select>
+      </div>
 
 
-
-
-
-
-
-
-
-
+      <div id="input-div" class="stretch-div"><input type="submit" value="Generate"></div>
+    </form>
   </div>
   <script src="js/script.js"></script>
 

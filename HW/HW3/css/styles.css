@@ -1,7 +1,7 @@
 /*Color pallet inspired from https://rosepinetheme.com/palette/ */
 
 #background {
-  background-color: #2c2e39;
+  background-color: #191724;
 
   display: flex;
   flex-direction: column;
@@ -10,16 +10,50 @@
 }
 
 #bodydiv {
-  background-color: #2c2e39;
   padding: 30px;
-
-  width: 30%;
-  max-width: 1400px;
+  width: 70%;
   color: white;
   margin-top: 20px;
   font-weight: 500;
   font-size: large;
+}
 
+#formdiv {
+  display: flex;
+  width: 90%;
+  margin-top: 20px;
+  padding: 30px;
+  justify-content: center;
+
+}
+.stretch-div{
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+}
+
+#grid-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  flex-direction: row;
+  justify-content: center;
+  gap: 15px;
+}
+
+.grid-item {
+  background-color: #2a273f;
+  border-radius: 5px;
+  width: 350px;
+  height: 200px;
+}
+
+input[type=submit] {
+  padding: 5px 15px;
+  background: #ccc;
+  border: 0 none;
+  cursor: pointer;
+  border-radius: 5px;
 
 }
 
@@ -33,6 +67,18 @@
     "wdth" 100;
 }
 
-a:visited{
+a:visited {
   color: #c4a7e7;
+}
+
+.max-width {
+  width: 100%;
+  text-align: center;
+}
+
+form {
+  background-color: #2a273f;
+
+  width: 100%;
+
 }
