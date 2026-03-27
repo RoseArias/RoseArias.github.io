@@ -1,5 +1,24 @@
 document.querySelector("#author-id").addEventListener("click", displayAuthorBio);
+document.querySelector("#translate-button").addEventListener("click", displayCountryFlag);
 
+
+displayLanguageChoices();
+function displayLanguageChoices() {
+  const languageChoices = [
+    {"name": "English","code":"en"},
+    {"name": "Esperanto","code":"es"},
+    {"name": "French","code":"fr"},
+    {"name": "Spanish","code":"sp"}
+  ]
+
+  let languages = _.shuffle(languageChoices);
+
+  for(let language of languages){
+    document.querySelector("#language-select").innerHTML += `<input type="radio" name="lang" id="${language.name}"
+    value = "${language.code}"> <label for="${language.code}"> ${language.name}</label>`;
+  }
+
+}
 
 //set background image from api
 //displayBackground();
@@ -18,6 +37,8 @@ async function displayBackground() {
   let image = _.shuffle(data.hits);
   background.style.backgroundImage = `url("${image[0].largeImageURL}")`;
 }
+
+
 
 async function displayRandomQuote(){
   let quote = document.querySelector('#main-qoute');
@@ -52,4 +73,16 @@ async function displayAuthorBio(){
     bio.setAttribute('style', '');
     shown = true;
   }
+}
+
+async function displayCountryFlag(){
+  
+  let country;
+  let value = document.querySelector("input[name=lang]:checked");
+  if (value) {
+    country = value.value;
+  }
+  console.log(country);
+
+  https://csumb.space/api/famousQuotes/translateQuote.php?lang=${country}&quoteId=2
 }
