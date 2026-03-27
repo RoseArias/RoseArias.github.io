@@ -1,0 +1,36 @@
+#background {
+  /* base if js doesnt change it*/
+  background-image: url("../img/background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: white;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px;
+}
+
+#bodydiv {
+  width: 65%;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  font-weight: 500;
+  font-size: large;
+}
+
+h1{
+  color: white;
+  text-align: center;
+}
+
+div{
+  text-align: center;
+}
+
+#main-author{
+  text-align: right;
+}
+div{
+  padding: 10px;
+}
